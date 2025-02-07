@@ -27,6 +27,7 @@ function openWindow(id) {
         "bodycamsystem": { width: 700, height: 400 },
         "hireme": { width: 700, height: 300 },
         "experience": { width: 450, height: 200 },
+        "outfitsystem": { width: 800, height: 550 },
     };
 
     if (defaultSizes[id]) {
@@ -38,7 +39,7 @@ function openWindow(id) {
     win.style.top = `${(window.innerHeight - win.offsetHeight) / 2}px`;
 
     let icon = document.querySelector(`#desktop .icon[onclick="openWindow('${id}')"] img`);
-    let iconSrc = icon ? icon.src : "src/files.svg"; 
+    let iconSrc = icon ? icon.src : "src/blue_screen_of_death.svg"; 
 
     addToTaskbar(id, iconSrc);
 }
