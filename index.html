@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio OS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="src/files.svg">
+</head>
+<body>
+    <div id="boot-screen">
+        <h1>Loading Portfolio OS...</h1>
+    </div>
+
+    <div id="desktop" class="hidden">
+        <div class="icon" onclick="openWindow('about')">
+            <img src="src/system_monitor.svg" alt="About">
+            <p>About</p>
+        </div>
+        <div class="icon" onclick="openWindow('projects')">
+            <img src="src/git-1.svg" alt="Projects">
+            <p>Projects</p>
+        </div>
+        <div class="icon" onclick="openWindow('contact')">
+            <img src="src/discord.svg" alt="Contact">
+            <p>Contact</p>
+        </div>
+    </div>
+
+    <div id="windows">
+        <div id="about" class="window">
+            <div class="window-header">
+                <span>User > About Me</span>
+                <button onclick="closeWindow('about')">X</button>
+            </div>
+            <div class="window-content">
+                <p>Welcome to my portfolio! I'm passionate about PC building, game development, and programming. I am currently avaliable for commissions, and part time work. I take paypal and robux as valid forms of payment.</p>
+            </div>
+        </div>
+
+        <div id="projects" class="window">
+            <div class="window-header">
+                <span>User > Projects</span>
+                <button onclick="closeWindow('projects')">X</button>
+            </div>
+            <div class="window-content">
+                <p>Here are some of my latest projects...</p>
+                <div class="icon" onclick="openWindow('mypcshopinfo')">
+                    <img src="src/nvidia.svg" alt="My PC Shop!">
+                    <p>mypcshop.info</p>
+                </div>
+                <div class="icon" onclick="openWindow('bodycamsystem')">
+                    <img src="src/video_camera.svg" alt="Modular Body Camera System">
+                    <p>bodycamsystem.info</p>
+                </div>
+                <div class="icon" onclick="openWindow('phantasmainfo')">
+                    <img src="src/microsoft_defender.svg" alt="Phantasma Tower Defence">
+                    <p>phantasma.info</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="window">
+            <div class="window-header">
+                <span>User > Contact</span>
+                <button onclick="closeWindow('contact')">X</button>
+            </div>
+            <div class="window-content">
+                <p>Message me on discord at: `someonehere.`</p>
+            </div>
+        </div>
+
+        <div id="mypcshopinfo" class="window">
+            <div class="window-header">
+                <span>mypcshop.info</span>
+                <button onclick="closeWindow('mypcshopinfo')">X</button>
+            </div>
+            <div class="window-content">
+                <p>My PC Shop is a game developed by someonehere. where you have to maintain, 
+                    and upkeep a PC shop, that sells PC Parts, keyboards, mice, and more! You 
+                    have to manage prices compared to MSRP, keep customers happy and design 
+                    your store!
+
+                    The process involved coding Data Serilization systems for saving objects to Datastores, AI programming for the customers,
+                    setting up modular systems in order to be able to add many parts to the game, and building mechanics.
+                </p>
+                <div id="windowed-image">
+                    <img src="mypcshop1.png">
+                    <p>One of the first multiplayer tests.</p>
+                </div>
+                <div id="windowed-image">
+                    <img src="mypcshop2.png">
+                    <p>A line-up of some of the CPUs in-game.</p>
+                </div>
+                <div id="windowed-image">
+                    <img src="mypcshop3.png">
+                    <p>A decorated store with different aisles for products.</p>
+                </div>
+            </div>
+        </div>
+        <div id="bodycamsystem" class="window">
+            <div class="window-header">
+                <span>bodycamsystem.info</span>
+                <button onclick="closeWindow('bodycamsystem')">X</button>
+            </div>
+            <div class="window-content">
+                <p>The Axon Body modular bodycamera system allows you to view other players bodycams, record footage to playback later,
+                    disable and enable your bodycamera, check the status of other officers, and more.
+                </p>
+                <div id="windowed-image">
+                    <video width="450" height="450" controls>
+                        <source src="src/bodycamvideo.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                    <p>Video Demonstration</p>
+                </div>
+            </div>
+        </div>
+        <div id="phantasmainfo" class="window">
+            <div class="window-header">
+                <span>bodycamsystem.info</span>
+                <button onclick="closeWindow('phantasmainfo')">X</button>
+            </div>
+            <div class="window-content">
+                <p>
+                    Phantasma was a Tower Defence Game developed by me and a few other developers and contractors, I contributed as a Programmer and GFX Artist.
+                </p>
+                <a href="https://www.roblox.com/games/7933576410/Phantasma">Try it here!</a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="taskbar">
+        <p id="time">12:00</p> 
+        <div id="taskbar-items"></div>
+    </div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
