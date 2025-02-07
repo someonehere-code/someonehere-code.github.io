@@ -25,6 +25,14 @@
             <img src="src/discord.svg" alt="Contact">
             <p>Contact</p>
         </div>
+        <div class="icon" onclick="openWindow('experience')">
+            <img src="src/roblox_studio.svg" alt="Experience">
+            <p>Experience</p>
+        </div>
+        <div class="icon" onclick="openWindow('hireme')">
+            <img src="src/microsoft_games-1.svg" alt="Hire me">
+            <p>Hire Me</p>
+        </div>
     </div>
 
     <div id="windows">
@@ -67,6 +75,29 @@
             </div>
             <div class="window-content">
                 <p>Message me on discord at: `someonehere.`</p>
+            </div>
+        </div>
+
+        <div id="experience" class="window">
+            <div class="window-header">
+                <span>User > Experience</span>
+                <button onclick="closeWindow('experience')">X</button>
+            </div>
+            <div class="window-content">
+                <p>I currently have over 3 years of experience in Roblox Programming, 1 year of website design, and 6 months of python.</p>
+            </div>
+        </div>
+
+        <div id="hireme" class="window">
+            <div class="window-header">
+                <span>User > Hire Me</span>
+                <button onclick="closeWindow('hireme')">X</button>
+            </div>
+            <div class="window-content">
+                <h1>If you'd like to hire me:</h1>
+                <p>Contact me at `someonehere.` on discord, yes including the period at the end. Make sure to inlcude details about the project, as well as payment.</p>
+                <h1>If you were sent this:</h1>
+                <p>Well, it's pretty simple isn't it? Just respond with how your hiring process works or if I can jump straight into the work.</p>
             </div>
         </div>
 

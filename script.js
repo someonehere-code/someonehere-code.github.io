@@ -24,7 +24,9 @@ function openWindow(id) {
         "contact": { width: 350, height: 200 },
         "mypcshop": { width: 600, height: 400 },
         "mypcshopinfo": { width: 700, height: 400 },
-        "bodycamsystem": { width: 700, height: 400 }
+        "bodycamsystem": { width: 700, height: 400 },
+        "hireme": { width: 700, height: 300 },
+        "experience": { width: 450, height: 200 },
     };
 
     if (defaultSizes[id]) {
