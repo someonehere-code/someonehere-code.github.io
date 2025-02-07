@@ -16,7 +16,7 @@ Yes! Feel free to use this as a base for your own portfolio. However, you may ne
 ## How to Use
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/someonehere-code/portfolio-os.git
+   git clone https://someonehere-code.github.io/
    ```
 2. **Open `index.html`** in your browser to preview the portfolio.
 3. **Customize the content:**
