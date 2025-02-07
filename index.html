@@ -33,6 +33,10 @@
             <img src="src/microsoft_games-1.svg" alt="Hire me">
             <p>Hire Me</p>
         </div>
+        <div class="icon" onclick="openWindow('opensource')">
+            <img src="src/github.svg" alt="Open Source">
+            <p>Open Source Website</p>
+        </div>
     </div>
 
     <div id="windows">
@@ -102,6 +106,17 @@
                 <p>Contact me at `someonehere.` on discord, yes including the period at the end. Make sure to inlcude details about the project, as well as payment.</p>
                 <h1>If you were sent this:</h1>
                 <p>Well, it's pretty simple isn't it? Just respond with how your hiring process works or if I can jump straight into the work.</p>
+            </div>
+        </div>
+
+        <div id="opensource" class="window">
+            <div class="window-header">
+                <span>outfitsystem.info</span>
+                <button onclick="closeWindow('opensource')">X</button>
+            </div>
+            <div class="window-content">
+                <p>The code for this website is open-source and originally written by `someonehere.`</p>
+                <a href="https://github.com/someonehere-code/someonehere-code.github.io/tree/main">Check it out</a>
             </div>
         </div>
 
@@ -186,6 +201,7 @@
     <div id="taskbar">
         <p id="time">12:00</p> 
         <div id="taskbar-items"></div>
+        <a href="https://github.com/someonehere-code/someonehere-code.github.io">Open Source Project</a>
     </div>    
 
     <script src="script.js"></script>

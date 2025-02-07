@@ -165,6 +165,7 @@ button:hover {
     border-radius: 5px;
 }
 
+
 .window-header {
     background: #202020;
     color: white;
@@ -185,4 +186,3 @@ button:hover {
     resize: both;
     overflow: hidden;
 }
-
