@@ -28,6 +28,7 @@ function openWindow(id) {
         "hireme": { width: 700, height: 300 },
         "experience": { width: 450, height: 200 },
         "outfitsystem": { width: 800, height: 550 },
+        "lockersystem": { width: 800, height: 550 },
     };
 
     if (defaultSizes[id]) {
