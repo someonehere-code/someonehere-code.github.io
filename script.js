@@ -5,7 +5,7 @@ const projects = [
         tags: ["Large-Scale", "DataStores", "Frameworks", "Client-Server"],
         media: {
             type: "image",
-            src: "media/mypcshop3.png"
+            src: "mypcshop3.png"
         }
     },
     {
@@ -14,7 +14,7 @@ const projects = [
         tags: ["Systems Design", "Persistence", "Networking"],
         media: {
             type: "video",
-            src: "media/bodycamvideo.mp4"
+            src: "bodycamvideo.mp4"
         }
     },
     {
@@ -23,7 +23,7 @@ const projects = [
         tags: ["Modular", "UI Systems", "Customization"],
         media: {
             type: "video",
-            src: "media/lockersystem.mp4"
+            src: "lockersystem.mp4"
         }
     },
     {
@@ -32,7 +32,7 @@ const projects = [
         tags: ["Team Project", "OOP", "Game Logic"],
         media: {
             type: "image",
-            src: "media/phantasma.png"
+            src: "phantasma.png"
         }
     },
     {
@@ -41,7 +41,7 @@ const projects = [
         tags: ["E-Commerce", "Avatar Systems", "UX"],
         media: {
             type: "video",
-            src: "media/outfits.mp4"
+            src: "outfits.mp4"
         }
     }
 ];
@@ -178,3 +178,4 @@ function renderSkillsBento() {
 }
 
 renderSkillsBento();
+
