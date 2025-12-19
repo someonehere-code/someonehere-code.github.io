@@ -5,7 +5,7 @@ const projects = [
         tags: ["Large-Scale", "DataStores", "Frameworks", "Client-Server"],
         media: {
             type: "image",
-            src: "/mypcshop3.png"
+            src: "https://cdn.discordapp.com/attachments/1341730729335193681/1451370972954492938/mypcshop3.png?ex=6945ee0d&is=69449c8d&hm=ea514d6385b315b67b36842d4e296b8eb24e567725dc6e05253e0db464aecc3d&"
         }
     },
     {
@@ -14,7 +14,7 @@ const projects = [
         tags: ["Systems Design", "Persistence", "Networking"],
         media: {
             type: "video",
-            src: "/bodycamvideo.mp4"
+            src: "https://cdn.discordapp.com/attachments/1341730729335193681/1451370972308443358/bodycamvideo.mp4?ex=6945ee0c&is=69449c8c&hm=b54806a83e7c6444c1b7ce01c0a52d1995255dc72c3e4ab586e5d24a24cb5711&"
         }
     },
     {
@@ -23,7 +23,7 @@ const projects = [
         tags: ["Modular", "UI Systems", "Customization"],
         media: {
             type: "video",
-            src: "/lockersystem.mp4"
+            src: "https://cdn.discordapp.com/attachments/1341730729335193681/1451370970349830264/lockersystem.mp4?ex=6945ee0c&is=69449c8c&hm=975b3efc6bbb384add1ca84b24924af094825f7d76bb6f4bd0b3718939317138&"
         }
     },
     {
@@ -32,7 +32,7 @@ const projects = [
         tags: ["Team Project", "OOP", "Game Logic"],
         media: {
             type: "image",
-            src: "/phantasma.png"
+            src: "https://cdn.discordapp.com/attachments/1341730729335193681/1451370969275961384/phantasma.png?ex=6945ee0c&is=69449c8c&hm=7ba8bddbd4b2ea46ec091301be4059024cd017b9aa5c48c470c31616a6c232f4&"
         }
     },
     {
@@ -41,7 +41,7 @@ const projects = [
         tags: ["E-Commerce", "Avatar Systems", "UX"],
         media: {
             type: "video",
-            src: "/outfits.mp4"
+            src: "https://cdn.discordapp.com/attachments/1341730729335193681/1451370966859911359/outfits.mp4?ex=6945ee0b&is=69449c8b&hm=734699a5e182c6e2d7a43fdf46a30fe552995fcb0283117065e57d3cde78a93f&"
         }
     }
 ];
@@ -178,5 +178,6 @@ function renderSkillsBento() {
 }
 
 renderSkillsBento();
+
 
 
