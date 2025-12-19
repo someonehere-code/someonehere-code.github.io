@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>someonhere. Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">someonehere.dev</div>
+        <nav>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#rates">Rates</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>I program reliable, and scalable scripts, and systems.</h1>
+        <p>
+            Whether it be Gameplay systems, data persistence using the DataStoreService, or entire frameworks. I can
+            build it clean and production ready.
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="#rates" class="btn secondary">Pay Rates</a>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-list" id="projectsGrid"></div>
+    </section>
+
+
+    <section id="skills" class="section">
+        <h2>Core Skills</h2>
+        <div class="bento-grid" id="skillsGrid"></div>
+    </section>
+
+    <section id="rates" class="section">
+        <h2>Pay Rates</h2>
+        <p class="rates-intro">
+            Answer a few quick questions and I’ll recommend the best pricing option for your needs.
+        </p>
+
+        <div class="rates-box">
+            <div class="question">
+                <h3>What type of work do you need?</h3>
+                <select id="workType">
+                    <option value="0">Select an option</option>
+                    <option value="1">Small fixes or cleanup</option>
+                    <option value="2">Multiple scripts or systems</option>
+                    <option value="3">Large-scale refactor or overhaul</option>
+                    <option value="4">New system commission</option>
+                    <option value="5">Ongoing / full-time work</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <h3>How complex is the codebase?</h3>
+                <select id="complexity">
+                    <option value="0">Select an option</option>
+                    <option value="1">Simple / small</option>
+                    <option value="2">Moderate</option>
+                    <option value="3">Large or messy</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <h3>How urgent is the work?</h3>
+                <select id="urgency">
+                    <option value="0">Select an option</option>
+                    <option value="1">No rush</option>
+                    <option value="2">Soon</option>
+                    <option value="3">Urgent</option>
+                </select>
+            </div>
+
+            <button class="btn primary" onclick="calculateRate()">Get Recommendation</button>
+
+            <div id="rateResult" class="rate-result"></div>
+        </div>
+
+        <div id="allRates" class="all-rates hidden">
+            <div class="grid">
+                <div class="rate-card" id="rate-small">
+                    <h3>Small Script Work</h3>
+                    <p class="rate">15–30 USD</p>
+                    <p>Small fixes, cleanup, or rewrites.</p>
+                </div>
+
+                <div class="rate-card" id="rate-medium">
+                    <h3>Medium Script Work</h3>
+                    <p class="rate">30–60 USD</p>
+                    <p>Multiple scripts, unoptimized systems fixed.</p>
+                </div>
+
+                <div class="rate-card" id="rate-large">
+                    <h3>Large Script Work</h3>
+                    <p class="rate">80–150 USD</p>
+                    <p>Framework rewrites, large-scale fixes.</p>
+                </div>
+
+                <div class="rate-card" id="rate-generic">
+                    <h3>Generic Systems</h3>
+                    <p class="rate">30–50 USD</p>
+                    <p>Trading, inventories, basic DataStores.</p>
+                </div>
+
+                <div class="rate-card" id="rate-advanced">
+                    <h3>Advanced Systems</h3>
+                    <p class="rate">100–250 USD</p>
+                    <p>Combat, weapons, abilities, advanced logic.</p>
+                </div>
+
+                <div class="rate-card" id="rate-fulltime">
+                    <h3>Full-Time / Long-Term</h3>
+                    <p class="rate">To Be Discussed</p>
+                    <p>Ongoing or full-time development.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p class="about-text">
+            Hello! I am someonehere. I have been a Roblox Scripter for nearly 4 years, I'm interested in helping you
+            achieve whatever your needs are in a reasonable time frame, whilst also keeping all of my code clean,
+            readable, and production ready.
+        </p>
+    </section>
+
+
+    <footer class="footer">
+        <p>© 2025 someonehere</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
